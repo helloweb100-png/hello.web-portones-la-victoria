@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es-MX" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <script>
+        /* Marca que hay JS (los estados iniciales de animacion solo aplican con .js)
+           y evita que el navegador restaure el scroll bajo el loader. */
+        document.documentElement.classList.replace('no-js', 'js');
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+        /* Failsafe: si app.js no arranca en 5 s, muestra todo el contenido sin animaciones */
+        setTimeout(function () {
+            var d = document.documentElement;
+            if (!d.classList.contains('js-ready')) d.classList.add('no-gsap');
+        }, 5000);
+    </script>
+
+    <!-- SEO base -->
+    <title>Portones Eléctricos y Cortinas Metálicas en El Salto | La Victoria</title>
+    <meta name="description" content="Portones eléctricos, cortinas metálicas, herrería, puertas y ventanas de aluminio a tu medida en El Salto, Durango. Fabricación e instalación. Cotiza por WhatsApp.">
+    <meta name="keywords" content="portones eléctricos, cortinas metálicas, herrería, puertas de aluminio, ventanas de aluminio, El Salto Durango, La Victoria">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Portones Eléctricos y Cortinas Metálicas La Victoria">
+    <meta name="theme-color" content="#0a0c0f">
+    <meta name="color-scheme" content="dark">
+    <!-- Al publicar, agrega aqui la URL real: <link rel="canonical" href="https://TU-DOMINIO.com/"> -->
+
+    <!-- Open Graph / Twitter (al publicar, cambia og:image por la URL absoluta de img/web/og-cover.jpg) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="La Victoria">
+    <meta property="og:title" content="Portones Eléctricos y Cortinas Metálicas en El Salto | La Victoria">
+    <meta property="og:description" content="Portones, cortinas metálicas, herrería y aluminio fabricados a tu medida e instalados en El Salto, Durango.">
+    <meta property="og:image" content="img/web/og-cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="img/logo-mark.svg" type="image/svg+xml">
+
+    <!-- Fuentes autoalojadas -->
+    <link rel="preload" href="fonts/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Imagen principal del hero (LCP) -->
+    <link rel="preload" href="img/web/puerta-cafe-vidrio.webp" as="image" type="image/webp">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Datos estructurados: negocio local -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
+        "name": "Portones Eléctricos y Cortinas Metálicas La Victoria",
+        "alternateName": "La Victoria",
+        "description": "Fabricación e instalación de portones eléctricos, cortinas metálicas, herrería en general, puertas y ventanas de aluminio en El Salto, Durango.",
+        "telephone": "+52-675-112-4124",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "El Salto",
+            "addressRegion": "Durango",
+            "addressCountry": "MX"
+        },
+        "areaServed": { "@type": "City", "name": "El Salto, Durango" },
+        "knowsAbout": ["Portones eléctricos", "Cortinas metálicas", "Herrería", "Puertas de aluminio", "Ventanas de aluminio"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Portones eléctricos" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cortinas metálicas" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Herrería en general" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Puertas de aluminio y herrería" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ventanas de aluminio" } }
+            ]
+        }
+    }
+    </script>
+    <!-- Datos estructurados: preguntas frecuentes -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            { "@type": "Question", "name": "¿Fabrican a la medida?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Cada portón, cortina, puerta o ventana se fabrica con tus medidas y el diseño que elijas." } },
+            { "@type": "Question", "name": "¿Cómo pido una cotización?", "acceptedAnswer": { "@type": "Answer", "text": "Escríbenos por WhatsApp con fotos del espacio y las medidas aproximadas. Te respondemos con precio y tiempos." } },
+            { "@type": "Question", "name": "¿Hacen portones eléctricos?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, es una de nuestras especialidades. Cuéntanos el ancho de tu entrada y el tipo de portón que buscas para cotizar." } },
+            { "@type": "Question", "name": "¿Qué materiales y colores manejan?", "acceptedAnswer": { "@type": "Answer", "text": "Trabajamos acero galvanizado, herrería pintada, aluminio en varios acabados y vidrio claro, oscuro o texturizado. Pregunta por los colores disponibles." } },
+            { "@type": "Question", "name": "¿Instalan los trabajos?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, fabricamos e instalamos. La instalación se coordina cuando confirmas tu pedido." } },
+            { "@type": "Question", "name": "¿Atienden fuera de El Salto?", "acceptedAnswer": { "@type": "Answer", "text": "Cuéntanos dónde estás por WhatsApp y confirmamos si llegamos a tu zona." } }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+<symbol id="i-arrow-left" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></symbol>
+<symbol id="i-arrow-up-right" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></symbol>
+<symbol id="i-calculator" viewBox="0 0 256 256" fill="currentColor"><path d="M80,120h96a8,8,0,0,0,8-8V64a8,8,0,0,0-8-8H80a8,8,0,0,0-8,8v48A8,8,0,0,0,80,120Zm8-48h80v32H88ZM200,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V40A16,16,0,0,0,200,24Zm0,192H56V40H200ZM100,148a12,12,0,1,1-12-12A12,12,0,0,1,100,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,148Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,148Zm-80,40a12,12,0,1,1-12-12A12,12,0,0,1,100,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,140,188Zm40,0a12,12,0,1,1-12-12A12,12,0,0,1,180,188Z"/></symbol>
+<symbol id="i-caret-down" viewBox="0 0 256 256" fill="currentColor"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"/></symbol>
+<symbol id="i-chat-circle-text" viewBox="0 0 256 256" fill="currentColor"><path d="M168,112a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm-8,24H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm72-8A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"/></symbol>
+<symbol id="i-check-circle" viewBox="0 0 256 256" fill="currentColor"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></symbol>
+<symbol id="i-door" viewBox="0 0 256 256" fill="currentColor"><path d="M232,216H208V40a16,16,0,0,0-16-16H64A16,16,0,0,0,48,40V216H24a8,8,0,0,0,0,16H232a8,8,0,0,0,0-16ZM64,40H192V216H64Zm104,92a12,12,0,1,1-12-12A12,12,0,0,1,168,132Z"/></symbol>
+<symbol id="i-garage" viewBox="0 0 256 256" fill="currentColor"><path d="M240,192h-8V98.67a16,16,0,0,0-7.12-13.31l-88-58.67a16,16,0,0,0-17.75,0l-88,58.67A16,16,0,0,0,24,98.67V192H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM40,98.67,128,40l88,58.66V192H192V136a8,8,0,0,0-8-8H72a8,8,0,0,0-8,8v56H40ZM176,144v16H136V144Zm-56,16H80V144h40ZM80,176h40v16H80Zm56,0h40v16H136Z"/></symbol>
+<symbol id="i-grid-four" viewBox="0 0 256 256" fill="currentColor"><path d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z"/></symbol>
+<symbol id="i-hammer" viewBox="0 0 256 256" fill="currentColor"><path d="M251.34,112,183.88,44.08a96.1,96.1,0,0,0-135.77,0l-.09.09L34.25,58.4A8,8,0,0,0,45.74,69.53L59.47,55.35a79.92,79.92,0,0,1,18.71-13.9L124.68,88l-96,96a16,16,0,0,0,0,22.63l20.69,20.69a16,16,0,0,0,22.63,0l96-96,14.34,14.34h0L200,163.3a16,16,0,0,0,22.63,0l28.69-28.69A16,16,0,0,0,251.34,112ZM60.68,216,40,195.31l68-68L128.68,148ZM162.34,114.32,140,136.67,119.31,116l22.35-22.35a8,8,0,0,0,0-11.32L94.32,35a80,80,0,0,1,78.23,20.41l44.22,44.51L188,128.66l-14.34-14.34A8,8,0,0,0,162.34,114.32Zm49,37.66-12-12L228,111.25l12,12Z"/></symbol>
+<symbol id="i-list" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"/></symbol>
+<symbol id="i-map-pin" viewBox="0 0 256 256" fill="currentColor"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"/></symbol>
+<symbol id="i-paint-brush" viewBox="0 0 256 256" fill="currentColor"><path d="M232,32a8,8,0,0,0-8-8c-44.08,0-89.31,49.71-114.43,82.63A60,60,0,0,0,32,164c0,30.88-19.54,44.73-20.47,45.37A8,8,0,0,0,16,224H92a60,60,0,0,0,57.37-77.57C182.3,121.31,232,76.08,232,32ZM92,208H34.63C41.38,198.41,48,183.92,48,164a44,44,0,1,1,44,44Zm32.42-94.45q5.14-6.66,10.09-12.55A76.23,76.23,0,0,1,155,121.49q-5.9,4.94-12.55,10.09A60.54,60.54,0,0,0,124.42,113.55Zm42.7-2.68a92.57,92.57,0,0,0-22-22c31.78-34.53,55.75-45,69.9-47.91C212.17,55.12,201.65,79.09,167.12,110.87Z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></symbol>
+<symbol id="i-plus" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></symbol>
+<symbol id="i-rows" viewBox="0 0 256 256" fill="currentColor"><path d="M208,136H48a16,16,0,0,0-16,16v40a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V152A16,16,0,0,0,208,136Zm0,56H48V152H208v40Zm0-144H48A16,16,0,0,0,32,64v40a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V64A16,16,0,0,0,208,48Zm0,56H48V64H208v40Z"/></symbol>
+<symbol id="i-ruler" viewBox="0 0 256 256" fill="currentColor"><path d="M235.32,73.37,182.63,20.69a16,16,0,0,0-22.63,0L20.68,160a16,16,0,0,0,0,22.63l52.69,52.68a16,16,0,0,0,22.63,0L235.32,96A16,16,0,0,0,235.32,73.37ZM84.68,224,32,171.31l32-32,26.34,26.35a8,8,0,0,0,11.32-11.32L75.31,128,96,107.31l26.34,26.35a8,8,0,0,0,11.32-11.32L107.31,96,128,75.31l26.34,26.35a8,8,0,0,0,11.32-11.32L139.31,64l32-32L224,84.69Z"/></symbol>
+<symbol id="i-seal-check" viewBox="0 0 256 256" fill="currentColor"><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"/></symbol>
+<symbol id="i-shield-check" viewBox="0 0 256 256" fill="currentColor"><path d="M208,40H48A16,16,0,0,0,32,56v56c0,52.72,25.52,84.67,46.93,102.19,23.06,18.86,46,25.26,47,25.53a8,8,0,0,0,4.2,0c1-.27,23.91-6.67,47-25.53C198.48,196.67,224,164.72,224,112V56A16,16,0,0,0,208,40Zm0,72c0,37.07-13.66,67.16-40.6,89.42A129.3,129.3,0,0,1,128,223.62a128.25,128.25,0,0,1-38.92-21.81C61.82,179.51,48,149.3,48,112l0-56,160,0ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"/></symbol>
+<symbol id="i-truck" viewBox="0 0 256 256" fill="currentColor"><path d="M255.42,117l-14-35A15.93,15.93,0,0,0,226.58,72H192V64a8,8,0,0,0-8-8H32A16,16,0,0,0,16,72V184a16,16,0,0,0,16,16H49a32,32,0,0,0,62,0h50a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V120A7.94,7.94,0,0,0,255.42,117ZM192,88h34.58l9.6,24H192ZM32,72H176v64H32ZM80,208a16,16,0,1,1,16-16A16,16,0,0,1,80,208Zm81-24H111a32,32,0,0,0-62,0H32V152H176v12.31A32.11,32.11,0,0,0,161,184Zm31,24a16,16,0,1,1,16-16A16,16,0,0,1,192,208Zm48-24H223a32.06,32.06,0,0,0-31-24V128h48Z"/></symbol>
+<symbol id="i-whatsapp-logo-fill" viewBox="0 0 256 256" fill="currentColor"><path d="M152.58,145.23l23,11.48A24,24,0,0,1,152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155ZM232,128A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-40,24a8,8,0,0,0-4.42-7.16l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88A40,40,0,0,0,192,152Z"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 256 256" fill="currentColor"><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"/></symbol>
+<symbol id="i-x" viewBox="0 0 256 256" fill="currentColor"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></symbol>
+<symbol id="i-logo" viewBox="0 0 48 48"><rect width="48" height="48" rx="10" fill="var(--accent,#EA7230)"/><path d="M9 11h9.5L24 27.5 29.5 11H39L28.5 38h-9z" fill="var(--bg,#0A0C0F)"/><path fill="var(--accent,#EA7230)" d="M0 17h48v2.2H0zM0 23h48v2.2H0zM0 29h48v2.2H0z"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<!-- ============ LOADER: cortina metalica que se levanta ============ -->
+<div id="loader" role="status" aria-live="polite" aria-label="Cargando La Victoria">
+    <div class="loader__slats" aria-hidden="true"></div>
+    <div class="loader__core">
+        <div class="loader__ring">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+                <circle class="loader__ring-track" cx="60" cy="60" r="54"/>
+                <circle class="loader__ring-arc" cx="60" cy="60" r="54"/>
+                <circle class="loader__ring-arc loader__ring-arc--inner" cx="60" cy="60" r="42"/>
+            </svg>
+            <svg class="loader__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+        </div>
+        <p class="loader__pct"><span id="loader-pct">0</span><small>%</small></p>
+        <p class="loader__label">Abriendo el taller</p>
+    </div>
+    <div class="loader__rail" aria-hidden="true"></div>
+</div>
+
+<div class="progress" aria-hidden="true"><i id="progress"></i></div>
+<canvas id="embers" aria-hidden="true"></canvas>
+
+<!-- ============ NAVEGACION ============ -->
+<header class="nav" id="nav">
+    <div class="nav__bar container">
+        <a class="brand" href="#inicio" aria-label="La Victoria, ir al inicio">
+            <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+            <span class="brand__text">
+                <strong>La Victoria</strong>
+                <small>Portones y cortinas</small>
+            </span>
+        </a>
+
+        <nav class="nav__links" aria-label="Principal">
+            <a href="#servicios">Servicios</a>
+            <a href="#trabajos">Trabajos</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#preguntas">Preguntas</a>
+        </nav>
+
+        <a class="btn btn--primary btn--sm nav__cta" href="https://wa.me/526751124124?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20con%20La%20Victoria." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo-fill"/></svg>
+            <span>Cotizar por WhatsApp</span>
+        </a>
+
+        <button class="nav__burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+            <span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- Menu movil -->
+<div class="menu" id="menu" inert>
+    <nav class="menu__nav" aria-label="Menú móvil">
+        <a href="#servicios" data-menu-link>Servicios</a>
+        <a href="#trabajos" data-menu-link>Trabajos</a>
+        <a href="#proceso" data-menu-link>Proceso</a>
+        <a href="#preguntas" data-menu-link>Preguntas</a>
+        <a href="#contacto" data-menu-link>Contacto</a>
+    </nav>
+    <div class="menu__foot">
+        <a class="btn btn--primary btn--block" href="https://wa.me/526751124124?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20con%20La%20Victoria." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo-fill"/></svg>
+            <span>Cotizar por WhatsApp</span>
+        </a>
+        <p>El Salto, Durango</p>
+    </div>
+</div>
+
+<main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__inner container">
+            <div class="hero__copy">
+                <p class="eyebrow" data-hero-in>Herrería y aluminio en El Salto, Durango</p>
+                <h1 class="hero__title" id="hero-title" data-split>Portones y cortinas <span class="accent">a tu medida.</span></h1>
+                <p class="hero__sub" data-hero-in>Portones eléctricos, cortinas metálicas, herrería y ventanas de aluminio, fabricados en taller e instalados en El Salto.</p>
+                <div class="hero__cta" data-hero-in>
+                    <a class="btn btn--primary btn--lg" data-magnetic href="https://wa.me/526751124124?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20con%20La%20Victoria." target="_blank" rel="noopener">
+                        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo-fill"/></svg>
+                        <span>Cotizar por WhatsApp</span>
+                    </a>
+                    <a class="btn btn--ghost btn--lg" href="#trabajos">
+                        <span>Ver trabajos</span>
+                        <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero__stack" data-stack>
+                <figure class="frame frame--b" data-depth="0.6">
+                    <img src="img/web/puerta-vidrio-blanca.webp" width="1187" height="1400" alt="Puerta de aluminio blanco con vidrio completo, lista para instalar" decoding="async">
+                </figure>
+                <figure class="frame frame--a" data-depth="1">
+                    <img src="img/web/puerta-cafe-vidrio.webp" width="780" height="1040" alt="Puerta de herrería color café con vidrio texturizado, fabricada a medida" fetchpriority="high" decoding="async">
+                </figure>
+                <figure class="frame frame--c" data-depth="1.5">
+                    <img src="img/web/puerta-decorativa.webp" width="780" height="1040" alt="Puerta blanca con diseño moderno de ventanas verticales" decoding="async">
+                </figure>
+                <div class="dim" aria-hidden="true">
+                    <span class="dim__line"></span>
+                    <span class="dim__label">A tu medida</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MARQUEE (unico del sitio) ============ -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" data-marquee>
+            <ul class="marquee__group">
+                <li>Portones eléctricos</li><li>Cortinas metálicas</li><li>Herrería en general</li><li>Puertas</li><li>Ventanas de aluminio</li>
+            </ul>
+            <ul class="marquee__group">
+                <li>Portones eléctricos</li><li>Cortinas metálicas</li><li>Herrería en general</li><li>Puertas</li><li>Ventanas de aluminio</li>
+            </ul>
+            <ul class="marquee__group">
+                <li>Portones eléctricos</li><li>Cortinas metálicas</li><li>Herrería en general</li><li>Puertas</li><li>Ventanas de aluminio</li>
+            </ul>
+            <ul class="marquee__group">
+                <li>Portones eléctricos</li><li>Cortinas metálicas</li><li>Herrería en general</li><li>Puertas</li><li>Ventanas de aluminio</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ============ MANIFIESTO ============ -->
+    <section class="manifesto" aria-label="Cómo trabajamos">
+        <div class="container">
+            <p class="manifesto__text" data-manifesto>Cada pieza sale del taller con tus medidas exactas. Soldamos, lijamos y pintamos acabados limpios, y la instalamos para que cierre bien desde el primer día.</p>
+        </div>
+    </section>
+
+    <!-- ============ SERVICIOS (bento) ============ -->
+    <section class="services" id="servicios" aria-labelledby="services-title">
+        <div class="container">
+            <header class="section-head">
+                <h2 id="services-title" data-split>Lo que fabricamos e instalamos</h2>
+                <p data-reveal>Elige tu especialidad y cotiza con un solo mensaje.</p>
+            </header>
+
+            <div class="bento">
+                <article class="card card--gate" data-card>
+                    <div class="card__media"><div class="px"><img src="img/web/porton-blanco.webp" width="1090" height="960" alt="Portón metálico blanco de doble hoja instalado en una entrada" loading="lazy" decoding="async"></div></div>
+                    <div class="card__body">
+                        <svg class="icon icon--lg" aria-hidden="true"><use href="#i-garage"/></svg>
+                        <h3>Portones eléctricos</h3>
+                        <p>Entra y sal sin bajarte del auto. Portones de acero hechos a la medida de tu entrada.</p>
+                    </div>
+                    <a class="card__go" href="https://wa.me/526751124124?text=Hola%2C%20quiero%20cotizar%20un%20port%C3%B3n%20el%C3%A9ctrico." target="_blank" rel="noopener" aria-label="Cotizar portones eléctricos por WhatsApp"><span class="card__arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span></a>
+                </article>
+
+                <article class="card card--shutter" data-card>
+                    <div class="card__media"><div class="px"><img src="img/web/cortina-instalada.webp" width="681" height="620" alt="Cortina metálica de lámina galvanizada instalada en fachada" loading="lazy" decoding="async"></div></div>
+                    <div class="card__body">
+                        <svg class="icon icon--lg" aria-hidden="true"><use href="#i-rows"/></svg>
+                        <h3>Cortinas metálicas</h3>
+                        <p>Cierre firme para tu local o cochera, en lámina galvanizada y a tu medida.</p>
+                    </div>
+                    <a class="card__go" href="https://wa.me/526751124124?text=Hola%2C%20quiero%20cotizar%20una%20cortina%20met%C3%A1lica." target="_blank" rel="noopener" aria-label="Cotizar cortinas metálicas por WhatsApp"><span class="card__arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span></a>
+                </article>
+
+                <article class="card card--iron" data-card>
+                    <div class="card__media"><div class="px"><img src="img/web/proteccion-ventanas.webp" width="720" height="360" alt="Protecciones de herrería con diseño geométrico en ventanas de una casa" loading="lazy" decoding="async"></div></div>
+                    <div class="card__body">
+                        <svg class="icon icon--lg" aria-hidden="true"><use href="#i-hammer"/></svg>
+                        <h3>Herrería en general</h3>
+                        <p>Protecciones, puertas y estructuras de acero, soldadas y pintadas a tu gusto.</p>
+                    </div>
+                    <a class="card__go" href="https://wa.me/526751124124?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20de%20herrer%C3%ADa." target="_blank" rel="noopener" aria-label="Cotizar herrería por WhatsApp"><span class="card__arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span></a>
+                </article>
+
+                <article class="card card--door" data-card>
+                    <div class="card__media"><div class="px"><img src="img/web/puerta-negra.webp" width="530" height="1050" alt="Puerta de aluminio negro con manija de cobre" loading="lazy" decoding="async"></div></div>
+                    <div class="card__body">
+                        <svg class="icon icon--lg" aria-hidden="true"><use href="#i-door"/></svg>
+                        <h3>Puertas</h3>
+                        <p>Aluminio, vidrio o lámina. Tú eliges el diseño.</p>
+                    </div>
+                    <a class="card__go" href="https://wa.me/526751124124?text=Hola%2C%20quiero%20cotizar%20una%20puerta." target="_blank" rel="noopener" aria-label="Cotizar puertas por WhatsApp"><span class="card__arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span></a>
+                </article>
+
+                <article class="card card--window" data-card>
+                    <div class="card__media"><div class="px"><img src="img/web/ventana-corrediza.webp" width="720" height="795" alt="Ventanal de aluminio blanco con vidrio ahumado y sección corrediza" loading="lazy" decoding="async"></div></div>
+                    <div class="card__body">
+                        <svg class="icon icon--lg" aria-hidden="true"><use href="#i-grid-four"/></svg>
+                        <h3>Ventanas de aluminio</h3>
+                        <p>Fijas o corredizas, con vidrio claro u oscuro.</p>
+                    </div>
+                    <a class="card__go" href="https://wa.me/526751124124?text=Hola%2C%20quiero%20cotizar%20ventanas%20de%20aluminio." target="_blank" rel="noopener" aria-label="Cotizar ventanas de aluminio por WhatsApp"><span class="card__arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></span></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TRABAJOS (galeria horizontal anclada) ============ -->
+    <section class="works" id="trabajos" aria-labelledby="works-title">
+        <div class="works__pin" data-works-pin>
+            <header class="section-head container">
+                <p class="eyebrow">Portafolio</p>
+                <h2 id="works-title" data-split>Trabajos hechos en nuestro taller</h2>
+                <p data-reveal>Fotos reales de piezas que hemos fabricado. Toca una para verla en grande.</p>
+            </header>
+
+            <div class="works__viewport" data-works-viewport>
+                <ul class="works__track" data-works-track>
+                    <li class="work" style="--ar:1.135"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/porton-blanco.webp" width="1090" height="960" alt="Portón de doble hoja en lámina acanalada color blanco" loading="lazy" decoding="async"></div></button><figcaption>Portón de doble hoja en lámina acanalada</figcaption></figure></li>
+                    <li class="work" style="--ar:0.75"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/puerta-cafe-vidrio.webp" width="780" height="1040" alt="Puerta de herrería color café con vidrio texturizado y cerradura" loading="lazy" decoding="async"></div></button><figcaption>Puerta de herrería con vidrio texturizado</figcaption></figure></li>
+                    <li class="work" style="--ar:1.098"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/cortina-instalada.webp" width="681" height="620" alt="Cortina metálica galvanizada instalada en la fachada de una casa" loading="lazy" decoding="async"></div></button><figcaption>Cortina metálica instalada en fachada</figcaption></figure></li>
+                    <li class="work" style="--ar:0.75"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/ventana-cuadricula.webp" width="780" height="1040" alt="Ventanas de aluminio blanco con cuadrícula" loading="lazy" decoding="async"></div></button><figcaption>Ventanas de aluminio con cuadrícula</figcaption></figure></li>
+                    <li class="work" style="--ar:0.75"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/puerta-decorativa.webp" width="780" height="1040" alt="Puerta blanca con diseño de ventanas verticales" loading="lazy" decoding="async"></div></button><figcaption>Puerta blanca con diseño de ventanas verticales</figcaption></figure></li>
+                    <li class="work" style="--ar:1.25"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/cortina-taller.webp" width="1200" height="960" alt="Lámina galvanizada de una cortina metálica en proceso de fabricación" loading="lazy" decoding="async"></div></button><figcaption>Cortina metálica en fabricación</figcaption></figure></li>
+                    <li class="work" style="--ar:0.714"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/herreria-verde.webp" width="671" height="940" alt="Puerta de herrería pintada con rejilla de acero" loading="lazy" decoding="async"></div></button><figcaption>Puerta de herrería con rejilla</figcaption></figure></li>
+                    <li class="work" style="--ar:0.848"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/puerta-vidrio-blanca.webp" width="1187" height="1400" alt="Puerta de aluminio blanco con vidrio claro de cuerpo completo" loading="lazy" decoding="async"></div></button><figcaption>Puerta de aluminio con vidrio completo</figcaption></figure></li>
+                    <li class="work" style="--ar:2"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/proteccion-ventanas.webp" width="720" height="360" alt="Protecciones de herrería con diseño geométrico en las ventanas de una casa" loading="lazy" decoding="async"></div></button><figcaption>Protecciones de herrería para ventanas</figcaption></figure></li>
+                    <li class="work" style="--ar:0.56"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/puerta-verde.webp" width="700" height="1250" alt="Puerta de herrería con panel inferior de lámina acanalada y cerradura" loading="lazy" decoding="async"></div></button><figcaption>Puerta con panel de lámina acanalada</figcaption></figure></li>
+                    <li class="work" style="--ar:0.906"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/ventana-corrediza.webp" width="720" height="795" alt="Ventanal de aluminio blanco con vidrio ahumado y puerta corrediza" loading="lazy" decoding="async"></div></button><figcaption>Ventanal de aluminio con vidrio ahumado</figcaption></figure></li>
+                    <li class="work" style="--ar:0.505"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/puerta-negra.webp" width="530" height="1050" alt="Puerta de aluminio negro de dos paneles" loading="lazy" decoding="async"></div></button><figcaption>Puerta de aluminio negro</figcaption></figure></li>
+                    <li class="work" style="--ar:0.682"><figure><button class="work__btn" type="button" data-lightbox><div class="work__img"><img src="img/web/puerta-espejo.webp" width="900" height="1320" alt="Puerta de aluminio blanco con vidrio reflejante lista para entrega" loading="lazy" decoding="async"></div></button><figcaption>Puerta de aluminio lista para entrega</figcaption></figure></li>
+                </ul>
+            </div>
+
+            <div class="works__meter" aria-hidden="true"><i data-works-meter></i></div>
+        </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="process" id="proceso" aria-labelledby="process-title">
+        <div class="container">
+            <header class="section-head">
+                <h2 id="process-title" data-split>Del mensaje a la instalación</h2>
+                <p data-reveal>Cuatro pasos claros, sin vueltas ni sorpresas.</p>
+            </header>
+
+            <ol class="steps" data-steps>
+                <li class="step">
+                    <span class="step__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-chat-circle-text"/></svg></span>
+                    <h3>Cuéntanos qué necesitas</h3>
+                    <p>Mándanos fotos y medidas por WhatsApp. Si no las tienes, te decimos cómo tomarlas.</p>
+                </li>
+                <li class="step">
+                    <span class="step__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-calculator"/></svg></span>
+                    <h3>Cotizamos</h3>
+                    <p>Te respondemos con precio y tiempos claros para tu proyecto.</p>
+                </li>
+                <li class="step">
+                    <span class="step__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-hammer"/></svg></span>
+                    <h3>Fabricamos</h3>
+                    <p>Cortamos, soldamos y pintamos tu pieza en el taller, con material de calidad.</p>
+                </li>
+                <li class="step">
+                    <span class="step__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-truck"/></svg></span>
+                    <h3>Instalamos</h3>
+                    <p>Llevamos tu pieza, la instalamos y verificamos que abra y cierre bien.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ============ COMPROMISOS ============ -->
+    <section class="promise" aria-labelledby="promise-title">
+        <div class="container">
+            <h2 id="promise-title" data-split>Lo que puedes esperar de nosotros</h2>
+            <ul class="promise__list">
+                <li class="promise__item" data-reveal>
+                    <svg class="icon icon--lg" aria-hidden="true"><use href="#i-ruler"/></svg>
+                    <h3>Medidas exactas</h3>
+                    <p>Fabricamos la pieza para que ajuste en tu espacio, sin adaptaciones a medias.</p>
+                    <img src="img/web/ventana-cuadricula.webp" width="780" height="1040" alt="" loading="lazy" decoding="async">
+                </li>
+                <li class="promise__item" data-reveal>
+                    <svg class="icon icon--lg" aria-hidden="true"><use href="#i-paint-brush"/></svg>
+                    <h3>Acabado limpio</h3>
+                    <p>Soldaduras pulidas y pintura pareja para que se vea bien desde el primer día.</p>
+                    <img src="img/web/puerta-decorativa.webp" width="780" height="1040" alt="" loading="lazy" decoding="async">
+                </li>
+                <li class="promise__item" data-reveal>
+                    <svg class="icon icon--lg" aria-hidden="true"><use href="#i-shield-check"/></svg>
+                    <h3>Materiales resistentes</h3>
+                    <p>Acero galvanizado, aluminio y vidrio pensados para el uso diario y la intemperie.</p>
+                    <img src="img/web/cortina-taller.webp" width="1200" height="960" alt="" loading="lazy" decoding="async">
+                </li>
+                <li class="promise__item" data-reveal>
+                    <svg class="icon icon--lg" aria-hidden="true"><use href="#i-wrench"/></svg>
+                    <h3>Trato directo</h3>
+                    <p>Hablas con quien fabrica tu pedido. Sin intermediarios ni vueltas.</p>
+                    <img src="img/web/puerta-espejo.webp" width="900" height="1320" alt="" loading="lazy" decoding="async">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+        <div class="container contact__grid">
+            <div class="contact__info">
+                <p class="eyebrow">Contacto</p>
+                <h2 id="contact-title" data-split>Cotiza tu proyecto hoy</h2>
+                <p class="contact__lead" data-reveal>Cuéntanos qué necesitas y te respondemos por WhatsApp.</p>
+                <dl class="contact__list" data-reveal>
+                    <div>
+                        <dt><svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo-fill"/></svg>WhatsApp</dt>
+                        <dd><a href="https://wa.me/526751124124" target="_blank" rel="noopener">675 112 4124</a></dd>
+                    </div>
+                    <div>
+                        <dt><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg>Ubicación</dt>
+                        <dd>El Salto, Durango</dd>
+                    </div>
+                    <div>
+                        <dt><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg>Cobertura</dt>
+                        <dd>Escríbenos tu ubicación y confirmamos si llegamos a tu zona.</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <form class="form" id="quote-form" novalidate data-reveal>
+                <div class="field">
+                    <label for="f-name">Nombre completo</label>
+                    <input type="text" id="f-name" name="name" autocomplete="name" required aria-describedby="f-name-err" placeholder="Ej. Juan Pérez">
+                    <p class="field__error" id="f-name-err" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                    <label for="f-need">¿Qué necesitas cotizar?</label>
+                    <div class="select">
+                        <select id="f-need" name="need" required aria-describedby="f-need-err">
+                            <option value="" disabled selected>Elige una opción</option>
+                            <option>Portón eléctrico</option>
+                            <option>Cortina metálica</option>
+                            <option>Herrería en general</option>
+                            <option>Puerta</option>
+                            <option>Ventanas de aluminio</option>
+                            <option>Otro trabajo</option>
+                        </select>
+                        <svg class="icon" aria-hidden="true"><use href="#i-caret-down"/></svg>
+                    </div>
+                    <p class="field__error" id="f-need-err" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                    <label for="f-msg">Cuéntanos más <span>(opcional)</span></label>
+                    <textarea id="f-msg" name="message" rows="4" aria-describedby="f-msg-help" placeholder="Medidas aproximadas, colonia o localidad, diseño que te gusta"></textarea>
+                    <p class="field__help" id="f-msg-help">Después podrás enviar fotos directamente por WhatsApp.</p>
+                </div>
+                <button class="btn btn--primary btn--lg btn--block" type="submit" id="f-submit">
+                    <svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo-fill"/></svg>
+                    <span class="btn__label">Cotizar por WhatsApp</span>
+                    <span class="btn__spinner" aria-hidden="true"></span>
+                </button>
+                <p class="form__status" id="f-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============ PREGUNTAS FRECUENTES ============ -->
+    <section class="faq" id="preguntas" aria-labelledby="faq-title">
+        <div class="container faq__wrap">
+            <h2 id="faq-title" data-split>Preguntas frecuentes</h2>
+            <div class="faq__list">
+                <div class="faq__item" data-reveal>
+                    <h3><button class="faq__q" type="button" id="faq-q1" aria-expanded="false" aria-controls="faq-a1"><span>¿Fabrican a la medida?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                    <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div><p>Sí. Cada portón, cortina, puerta o ventana se fabrica con tus medidas y el diseño que elijas.</p></div></div>
+                </div>
+                <div class="faq__item" data-reveal>
+                    <h3><button class="faq__q" type="button" id="faq-q2" aria-expanded="false" aria-controls="faq-a2"><span>¿Cómo pido una cotización?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                    <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div><p>Escríbenos por WhatsApp con fotos del espacio y las medidas aproximadas. Te respondemos con precio y tiempos.</p></div></div>
+                </div>
+                <div class="faq__item" data-reveal>
+                    <h3><button class="faq__q" type="button" id="faq-q3" aria-expanded="false" aria-controls="faq-a3"><span>¿Hacen portones eléctricos?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                    <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div><p>Sí, es una de nuestras especialidades. Cuéntanos el ancho de tu entrada y el tipo de portón que buscas para cotizar.</p></div></div>
+                </div>
+                <div class="faq__item" data-reveal>
+                    <h3><button class="faq__q" type="button" id="faq-q4" aria-expanded="false" aria-controls="faq-a4"><span>¿Qué materiales y colores manejan?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                    <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div><p>Trabajamos acero galvanizado, herrería pintada, aluminio en varios acabados y vidrio claro, oscuro o texturizado. Pregunta por los colores disponibles.</p></div></div>
+                </div>
+                <div class="faq__item" data-reveal>
+                    <h3><button class="faq__q" type="button" id="faq-q5" aria-expanded="false" aria-controls="faq-a5"><span>¿Instalan los trabajos?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                    <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5"><div><p>Sí, fabricamos e instalamos. La instalación se coordina cuando confirmas tu pedido.</p></div></div>
+                </div>
+                <div class="faq__item" data-reveal>
+                    <h3><button class="faq__q" type="button" id="faq-q6" aria-expanded="false" aria-controls="faq-a6"><span>¿Atienden fuera de El Salto?</span><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button></h3>
+                    <div class="faq__a" id="faq-a6" role="region" aria-labelledby="faq-q6"><div><p>Cuéntanos dónde estás por WhatsApp y confirmamos si llegamos a tu zona.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- ============ PIE ============ -->
+<footer class="footer">
+    <div class="container footer__grid">
+        <div class="footer__brand">
+            <a class="brand" href="#inicio" aria-label="La Victoria, ir al inicio">
+                <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+                <span class="brand__text"><strong>La Victoria</strong><small>Portones y cortinas</small></span>
+            </a>
+            <p>Portones eléctricos, cortinas metálicas, herrería en general, puertas y ventanas de aluminio en El Salto, Durango.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Pie de página">
+            <a href="#servicios">Servicios</a>
+            <a href="#trabajos">Trabajos</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#preguntas">Preguntas</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <address class="footer__contact">
+            <a href="https://wa.me/526751124124" target="_blank" rel="noopener">WhatsApp 675 112 4124</a>
+            <span>El Salto, Durango</span>
+        </address>
+    </div>
+    <p class="footer__giant" aria-hidden="true" data-giant>La Victoria</p>
+    <div class="container footer__legal">
+        <p>© 2026 Portones Eléctricos y Cortinas Metálicas La Victoria. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Boton flotante de WhatsApp -->
+<a class="fab" id="fab" href="https://wa.me/526751124124?text=Hola%2C%20quiero%20cotizar%20un%20trabajo%20con%20La%20Victoria." target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">
+    <span class="fab__tip">Cotizar por WhatsApp</span>
+    <svg class="icon" aria-hidden="true"><use href="#i-whatsapp-logo-fill"/></svg>
+</a>
+
+<!-- Visor de fotos -->
+<dialog class="lightbox" id="lightbox" aria-label="Visor de trabajos">
+    <button class="lightbox__btn lightbox__close" type="button" aria-label="Cerrar visor" data-lb-close><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Foto anterior" data-lb-prev><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg></button>
+    <button class="lightbox__btn lightbox__next" type="button" aria-label="Foto siguiente" data-lb-next><svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+    <figure class="lightbox__fig">
+        <img src="" alt="" id="lb-img">
+        <figcaption id="lb-cap"></figcaption>
+    </figure>
+</dialog>
+
+<!-- Librerias (si fallan, la pagina sigue funcionando sin animaciones avanzadas) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
