@@ -641,6 +641,16 @@ h2 {
 .contact__list dd { margin: .45rem 0 0 1.8rem; font-size: 1.1rem; color: var(--text); }
 .contact__list dd a { background: linear-gradient(var(--accent), var(--accent)) 0 100% / 0 2px no-repeat; transition: background-size .5s var(--ease); }
 .contact__list dd a:hover { background-size: 100% 2px; }
+.contact__address { font-style: normal; line-height: 1.5; }
+.contact__list dd a.contact__maplink { display: inline-flex; align-items: center; gap: .4rem; margin-top: .6rem; font-size: .95rem; color: var(--accent); }
+.contact__map {
+    margin-top: 1.2rem; overflow: hidden;
+    border-radius: var(--r);
+    border: 1px solid var(--line-2);
+    background: var(--bg-3);
+    aspect-ratio: 4 / 3;
+}
+.contact__map iframe { display: block; width: 100%; height: 100%; border: 0; }
 
 .form {
     display: grid; gap: 1.25rem;

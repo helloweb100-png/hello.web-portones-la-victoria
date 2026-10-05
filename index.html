@@ -55,6 +55,7 @@
         "telephone": "+52-675-112-4124",
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Calle de los Fresnos, Col. Victoria, frente a la escuela primaria Maestro Carlos A. Carrillo",
             "addressLocality": "El Salto",
             "addressRegion": "Durango",
             "addressCountry": "MX"
@@ -428,13 +429,19 @@
                     </div>
                     <div>
                         <dt><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg>Ubicación</dt>
-                        <dd>El Salto, Durango</dd>
+                        <dd>
+                            <address class="contact__address">Calle de los Fresnos, Col. Victoria, El Salto, Durango.<br>Frente a la escuela primaria Maestro Carlos A. Carrillo. Domicilio conocido.</address>
+                            <a class="contact__maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20de%20los%20Fresnos%2C%20Colonia%20Victoria%2C%20El%20Salto%2C%20Durango%2C%20M%C3%A9xico" target="_blank" rel="noopener">Abrir en Google Maps<svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right"/></svg></a>
+                        </dd>
                     </div>
                     <div>
                         <dt><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg>Cobertura</dt>
                         <dd>Escríbenos tu ubicación y confirmamos si llegamos a tu zona.</dd>
                     </div>
                 </dl>
+                <div class="contact__map" data-reveal>
+                    <iframe title="Mapa de Google Maps con la ubicación de La Victoria en El Salto, Durango" src="https://www.google.com/maps?q=Calle%20de%20los%20Fresnos%2C%20Colonia%20Victoria%2C%20El%20Salto%2C%20Durango%2C%20M%C3%A9xico&amp;hl=es&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                </div>
             </div>
 
             <form class="form" id="quote-form" novalidate data-reveal>
@@ -528,7 +535,8 @@
         </nav>
         <address class="footer__contact">
             <a href="https://wa.me/526751124124" target="_blank" rel="noopener">WhatsApp 675 112 4124</a>
-            <span>El Salto, Durango</span>
+            <span>Calle de los Fresnos, Col. Victoria, El Salto, Durango</span>
+            <span>Frente a la primaria Maestro Carlos A. Carrillo</span>
         </address>
     </div>
     <p class="footer__giant" aria-hidden="true" data-giant>La Victoria</p>
