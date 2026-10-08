@@ -214,6 +214,14 @@
         }, { passive: true });
     }
 
+    /* ---------- Videos: solo uno suena a la vez ---------- */
+    function initVideos() {
+        const videos = $$('.vid video');
+        videos.forEach((v) => v.addEventListener('play', () => {
+            videos.forEach((other) => { if (other !== v) other.pause(); });
+        }));
+    }
+
     /* ---------- Formulario: valida y abre WhatsApp ---------- */
     function initForm() {
         const form = $('#quote-form');
@@ -727,6 +735,7 @@
     safe(initAnchors, 'anclas');
     safe(initFaq, 'faq');
     safe(initLightbox, 'visor');
+    safe(initVideos, 'videos');
     safe(initForm, 'formulario');
     embers = null;
     safe(() => { embers = initEmbers(); }, 'chispas');

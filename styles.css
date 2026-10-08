@@ -568,6 +568,34 @@ h2 {
 }
 
 /* =====================================================================
+   VIDEOS (portones en funcionamiento)
+   ===================================================================== */
+.videos { position: relative; z-index: var(--z-content); padding: var(--section-y) 0 0; }
+.vgrid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem 1rem; }
+.vid { display: grid; align-content: start; gap: .75rem; margin: 0; min-width: 0; }
+.vid__frame {
+    position: relative; overflow: hidden;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--r);
+    border: 1px solid var(--line);
+    background: #000;
+}
+.vid--tall .vid__frame { aspect-ratio: 9 / 16; max-height: 80svh; }
+.vid video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.vid figcaption { font-size: .9rem; line-height: 1.4; color: var(--text-2); }
+
+@media (min-width: 700px) {
+    .vgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .vid--tall { grid-row: span 2; grid-template-rows: minmax(0, 1fr) auto; align-content: stretch; }
+    .vid--tall .vid__frame { aspect-ratio: auto; max-height: none; }
+    .vid--wide { grid-column: 1 / -1; }
+}
+@media (min-width: 1024px) {
+    .vgrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .vid--wide { grid-column: 2 / -1; }
+}
+
+/* =====================================================================
    PROCESO (linea de tiempo)
    ===================================================================== */
 .process { position: relative; z-index: var(--z-content); padding: var(--section-y) 0; }
